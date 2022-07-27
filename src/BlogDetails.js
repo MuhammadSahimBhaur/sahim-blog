@@ -4,7 +4,7 @@ import useFetch from './useFetch';
 const BlogDetail = () => {
 
     const { id } = useParams()
-    const { data, error } = useFetch("http://localhost:8000/blogs/" + id.toString())
+    const { data, error } = useFetch("http://localhost:8001/blogs/" + id.toString())
 
     return (<div className="blog-detail">
         { data &&

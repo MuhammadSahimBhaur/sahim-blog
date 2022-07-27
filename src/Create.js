@@ -12,7 +12,7 @@ const Create = () => {
         e.preventDefault()
         const blog = { title, body, author }
 
-        fetch('http://localhost:8000/blogs', {
+        fetch('http://localhost:8001/blogs', {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify(blog)
